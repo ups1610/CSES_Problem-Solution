@@ -15,6 +15,7 @@ void build(vector<ll>&arr,vector<ll>&v,ll s, ll e, ll index)
     build(arr,v,s,mid,2*index);
     build(arr,v,mid+1,e,2*index+1);
     arr[index]=max(arr[2*index],arr[2*index+1]);
+    
 }
 
 void query(vector<ll>&arr,ll s,ll e, ll index, ll val)
